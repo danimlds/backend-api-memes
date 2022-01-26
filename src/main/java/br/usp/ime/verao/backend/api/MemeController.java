@@ -37,7 +37,7 @@ public class MemeController {
 	@PostMapping
 	public String post(@RequestBody Meme meme) {
 		Meme m = memeService.save(meme);
-		return "Carro salvo com sucesso: " +m.getId();
+		return "Meme salvo com sucesso: " +m.getId();
 	}
 	
 	@PutMapping("/{id}")
